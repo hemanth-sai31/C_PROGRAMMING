@@ -7,7 +7,7 @@ void main() {
    char str[20];
    int length;
    
-   printf("\nEnter any string : ");
+   printf("\nEnter any alphabetical string : ");
    gets(str);
    
    length = string_ln(str);
@@ -15,7 +15,7 @@ void main() {
    getch();
 }
 
-int string_ln(char*p) /* p=&str[0] */
+int string_ln(char*p)
 {
    int count = 0;
    while (*p != '\0') {
