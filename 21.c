@@ -4,9 +4,10 @@ int main()
 {
     int first, second, *p, *q, sum;
     
-    printf("Enter two integers to add\n");
-    scanf("%d%d", &first, &second);
-    
+    printf("Input the first number : ");
+    scanf("%d", &first);
+	printf("Input the second number : ");
+    scanf("%d", &second);    
     p = &first;
     q = &second;
     
