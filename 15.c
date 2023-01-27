@@ -12,8 +12,8 @@ int main()
 	{
 		printf("Not eligble for vote");
 
-			printf("\nRemainding age for vote:%d",18-a);
+			printf("\nyou are allowed to vote after %d years",18-a);
 		}
 	
 	return 0;
-}v
+}
