@@ -6,14 +6,14 @@ int main()
 	scanf("%d",& num1);
 	printf("enter the N value: ");
 	scanf("%d",& num2);
-	printf("\n Display the even numbers between %d & %d are: ",num1,num2);
+	printf("\n All even numbers between %d & %d are: ",num1,num2);
 	for (i= num1; i<= num2; i++)
 	{
 		r= i%2;
 		if(r==0)
 		printf("\n %d", i);
 	}
-	printf("\n display the odd numbers between %d & %d are : ", num1, num2);
+	printf("\n All odd numbers between %d & %d are : ", num1, num2);
 	for (i= num1; i<= num2; i++)
 	{
 		r= i%2;
