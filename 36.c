@@ -1,16 +1,23 @@
-#include<stdio.h>
-#include<conio.h>
-int main ()
+#include <stdio.h>
+int rev_Int(int);
+int main()
 {
-int n,reverse = 0,remainder ;
-printf("Number : ");
-scanf("%d", &n);
-while (n!=0)
-{
-	remainder =n%10;
-	reverse = reverse * 10 + remainder;
-	n=n/10;
+    int Num, Rev = 0;   
+    printf("\nEnter the number to reverse: ");
+    scanf("%d", &Num);   
+    Rev = rev_Int (Num);
+    printf("Reverse of %d is = %d\n", Num, Rev);
+    return 0;
 }
-printf("Reverse Number = % d", reverse);
-return 0;
+int rev_Int (int Num)
+{
+    int remainder, Rev = 0;    
+    while (Num > 0)
+	{
+
+        remainder = Num %10;
+        Rev = Rev *10+ remainder;
+        Num = Num /10;
+    }    
+    return Rev;
 }
